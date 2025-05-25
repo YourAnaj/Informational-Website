@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faraday’s Law of Induction</title>
+    <link rel="stylesheet" href="topics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0Hhonpy0aDPbj/NFuiBA6+wuKgDiQ05f3xjCpa0T27NwVvL3WAWvPVxCjuZ/nQ8ppTI0jkZln9qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Pictures/Favicon.png">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="informationalweb.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="topics.html">Topics</a>
+                    <ul class="dropdown-content">
+                        <li><a href="introduction.html">Introduction to Electromagnetic Induction</a></li>
+                        <li><a href="single-loop.html">Inducing EMF in a Single Loop</a></li>
+                        <li><a href="multiple-turns.html">EMF in Coil with Multiple Turns</a></li>
+                        <li><a href="rotating-coil.html">Rotating Coil in a Magnetic Field</a></li>
+                        <li><a href="definitionterms.html">Definition of Terms</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                        <a href="quiz.html">Quiz & Assessment</a>
+                        <ul class="dropdown-content">
+                            <li class="has-submenu">
+                                <a>Introduction to Electromagnetic Induction <span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="introduction-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="introduction-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a>Faraday's Law of Induction <span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="faradaylaw-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="faradaylaw-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a>Inducing EMF in a Single Loop<span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="singeloop-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="singeloop-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a>EMF in Coil with Multiple Turns<span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="multipleturn-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="multipleturn-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a>Rotating Coil in a Magnetic Field <span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="rotatingcoil-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="rotatingcoil-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="topic-header">
+        <div class="topic-header-content">
+            <h1>Faraday’s Law of Induction</h1>
+            <p>Understand the relationship between changing magnetic fields and the induced electromotive force (EMF) in circuits.</p>
+        </div>
+    </section>
+
+    <section class="topic-content">
+        <div class="container">
+            <h2>What is Faraday’s Law of Induction?</h2>
+            <p>Faraday’s law of induction states that the induced electromotive force (EMF) in a closed circuit is directly proportional to the rate of change of magnetic flux through the circuit. In simple terms, when a magnetic field changes near a conductor (like a coil), it induces an electric current.</p>
+
+            <h3>Mathematical Formula:</h3>
+            <p>The induced EMF is calculated using the formula:</p>
+            <img src="Pictures/SL_FaradaysLaw.png" alt="Faraday’s Law" class="img-responsive" style="max-width: 100%; height: auto;">            <p>Where:</p>
+            <ul>
+                <li><strong>EMF</strong> is the induced electromotive force (in Volts, V)</li>
+                <li><strong>N</strong> is the number of turns in the coil</li>
+                <li><strong>Φ</strong> is the magnetic flux (in Weber, Wb)</li>
+                <li><strong>dΦ/dt</strong> is the rate of change of magnetic flux (in Weber per second, Wb/s)</li>
+            </ul>
+
+            <h3>Interactive Calculator</h3>
+            <p>Adjust the values below to calculate the induced EMF.</p>
+            
+            <!-- General Calculator Form -->
+            <div class="calculator-container">
+                <form id="calculator-form">
+                    <label for="num-turns">Number of Turns (N): </label>
+                    <input type="number" id="num-turns" class="input-field" value="1" min="1" max="100" oninput="calculateEMF()"><br>
+
+                    <label for="mag-field">Magnetic Field Strength (T): </label>
+                    <input type="number" id="mag-field" class="input-field" value="0.3" min="0" max="2" step="0.1" oninput="calculateEMF()"><br>
+
+                    <label for="coil-area">Coil Area (m²): </label>
+                    <input type="number" id="coil-area" class="input-field" value="0.1" min="0" max="2" step="0.01" oninput="calculateEMF()"><br>
+
+                    <label for="time-interval">Time Interval (seconds): </label>
+                    <input type="number" id="time-interval" class="input-field" value="3" min="0" max="10" step="0.1" oninput="calculateEMF()"><br>
+
+                    <p><strong>Calculated Induced EMF:</strong> <span id="calculated-EMF" class="negative">-0.01</span> V</p>
+                </form>
+            </div>
+
+            <h3>Applications of Faraday's Law:</h3>
+            <p>Faraday's law is essential in many real-world applications, such as:</p>
+            <ul>
+                <li><strong>Transformers:</strong> They rely on Faraday’s law to step up or step down voltages.</li>
+                <li><strong>Electric Generators:</strong> Rotating a coil within a magnetic field induces an EMF, which powers the grid.</li>
+                <li><strong>Electric Motors:</strong> In these devices, a current is induced in the coil which generates motion due to the interaction with the magnetic field.</li>
+                <li><strong>Inductive Charging:</strong> Wireless charging for devices such as smartphones uses this principle to transfer energy without physical connectors.</li>
+            </ul>
+
+            <h3>Real-Life Example - The Electric Generator:</h3>
+            <p>In an electric generator, mechanical energy is converted into electrical energy. As the coil rotates in a magnetic field, a change in magnetic flux induces an EMF and creates an electrical current. The greater the number of turns in the coil, the greater the induced EMF. This is how power plants generate electricity for homes and businesses.</p>
+
+            <h3>Historical Background:</h3>
+            <p>Michael Faraday, an English scientist, first discovered electromagnetic induction in 1831. His experiment involved moving a magnet in and out of a coil of wire, which caused a current to flow. This discovery led to the development of technologies like electric motors, transformers, and generators.</p>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Help</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Support Center</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Policies</h3>
+                <a href="#">Accessibility Statement</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Licensing</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Manage Cookies</a>
+            </div>
+        </div>
+        <p>&copy; 2025 Electromagnetic Induction</p>
+    </footer>
+
+    <script src="faradaylaw.js"></script>
+    <script src="dropdown.js"></script>
+</body>
+</html>

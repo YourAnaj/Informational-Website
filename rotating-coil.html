@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rotating Coil in a Magnetic Field</title>
+        <link rel="stylesheet" href="topics.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0Hhonpy0aDPbj/NFuiBA6+wuKgDiQ05f3xjCpa0T27NwVvL3WAWvPVxCjuZ/nQ8ppTI0jkZln9qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="Pictures/Favicon.png">
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="informationalweb.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="topics.html">Topics</a>
+                        <ul class="dropdown-content">
+                            <li><a href="introduction.html">Introduction to Electromagnetic Induction</a></li>
+                            <li><a href="faradays-law.html">Faraday's Law of Induction</a></li>
+                            <li><a href="single-loop.html">Inducing EMF in a Single Loop</a></li>
+                            <li><a href="multiple-turns.html">EMF in Coil with Multiple Turns</a></li>
+                            <li><a href="definitionterms.html">Definition of Terms</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="quiz.html">Quiz & Assessment</a>
+                        <ul class="dropdown-content">
+                            <li class="has-submenu">
+                                <a>Introduction to Electromagnetic Induction <span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="introduction-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="introduction-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a>Faraday's Law of Induction <span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="faradaylaw-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="faradaylaw-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a>Inducing EMF in a Single Loop<span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="singeloop-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="singeloop-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a>EMF in Coil with Multiple Turns<span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="multipleturn-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="multipleturn-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a>Rotating Coil in a Magnetic Field <span class="submenu-arrow">&#9656;</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="rotatingcoil-quiz-mc.html">Multiple Choice</a></li>
+                                    <li><a href="rotatingcoil-quiz-id.html">Identification</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="topic-header">
+            <div class="topic-header-content">
+                <h1>Rotating Coil in a Magnetic Field</h1>
+                <p>Explore how motion within a magnetic field generates electricity, and discover the principles behind Faraday's groundbreaking work on electromagnetic induction.</p>
+            </div>
+        </section>
+
+        <section class="topic-content">
+            <div class="container">
+                <h2>Rotating Coil in a Magnetic Field</h2>
+                <center><img src="Pictures/MF_Figure.png" alt="Figure" class="img-responsive" style="max-width: 40%; height: auto;"></center>
+                <h3>Example Problem:</h3>
+                <p>A coil with <strong>100 turns</strong> and an area of <strong>0.06 m²</strong> rotates in a uniform magnetic field of <strong>0.4 T</strong> at <strong>75 Hz</strong>. What is the peak EMF generated?</p>
+
+                <p><strong>Solution:</strong></p>
+                <p>Use the induced EMF formula for a rotating coil: EMFpeak = NBAω</p>
+
+                <p><strong>Where: </strong></p>
+
+                <ul>
+                    <li>N = number of turns (100)</li>
+                    <li>B = magnetic field (0.4 T)</li>
+                    <li>A = coil area (0.06 m²)</li>
+                    <li>ω = angular velocity (2π*f) </li>
+                </ul>
+
+                <p><strong>1. Calculate the angular velocity (Note, π = 3.1416):</strong> </p>
+                
+                <p>
+                    <img src="Pictures/MF_AngularVelocity.png" alt="Angular Velocity Solution" class="img-responsive" style="max-width: 100%; height: auto;">
+                </p>
+
+                <p><strong>Calculate the peak EMF:</strong></p>
+                <img src="Pictures/MF_EMFpeak.png" alt="Peak EMF Solution" class="img-responsive" style="max-width: 100%; height: auto;">
+
+                <p><strong>Final Answer:</strong> The peak EMF is <strong>1130.976 V or 1130.98 V</strong></p>
+
+                <!-- Calculator Section -->
+                <div class="calculator-container">
+                    <h3>Peak EMF Calculator</h3>
+                    <form id="calculator-form" class="calculator-form">
+                        <label for="turns">Number of Turns (N):</label>
+                        <input type="number" value="100" id="turns" required>
+
+                        <label for="magneticField">Magnetic Field (B in Tesla):</label>
+                        <input type="number" value="0.4" id="magneticField" required>
+
+                        <label for="coilArea">Coil Area (A in m²):</label>
+                        <input type="number" value="0.06" id="coilArea" required>
+
+                        <label for="frequency">Frequency (f in Hz):</label>
+                        <input type="number" value="75" id="frequency" required>
+
+                        <button type="button" onclick="calculatePeakEMF()">Calculate EMF</button>
+                    </form>
+
+                    <p id="result"></p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Help</h3>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Support Center</a>
+                    <a href="#">FAQ</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Policies</h3>
+                    <a href="#">Accessibility Statement</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Licensing</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Manage Cookies</a>
+                </div>
+            </div>
+            <p>&copy; 2025 Electromagnetic Induction</p>
+        </footer>
+
+        <script src="dropdown.js"></script>
+        <script src="rotating.js"></script>
+
+    </body>
+</html>

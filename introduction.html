@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Electromagnetic Induction</title>
+    <link rel="stylesheet" href="topics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="Pictures/Favicon.png">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="informationalweb.html">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="topics.html">Topics</a>
+                    <ul class="dropdown-content">
+                        <li><a href="faradays-law.html">Faraday's Law of Induction</a></li>
+                        <li><a href="single-loop.html">Inducing EMF in a Single Loop</a></li>
+                        <li><a href="multiple-turns.html">EMF in Coil with Multiple Turns</a></li>
+                        <li><a href="rotating-coil.html">Rotating Coil in a Magnetic Field</a></li>
+                        <li><a href="definitionterms.html">Definition of Terms</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="quiz.html">Quiz & Assessment</a>
+                    <ul class="dropdown-content">
+                        <li class="has-submenu">
+                            <a>Introduction to Electromagnetic Induction <span class="submenu-arrow">&#9656;</span></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="introduction-quiz-mc.html">Multiple Choice</a></li>
+                                <li><a href="introduction-quiz-id.html">Identification</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a>Faraday's Law of Induction <span class="submenu-arrow">&#9656;</span></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="faradaylaw-quiz-mc.html">Multiple Choice</a></li>
+                                <li><a href="faradaylaw-quiz-id.html">Identification</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a>Inducing EMF in a Single Loop<span class="submenu-arrow">&#9656;</span></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="singeloop-quiz-mc.html">Multiple Choice</a></li>
+                                <li><a href="singeloop-quiz-id.html">Identification</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a>EMF in Coil with Multiple Turns<span class="submenu-arrow">&#9656;</span></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="multipleturn-quiz-mc.html">Multiple Choice</a></li>
+                                <li><a href="multipleturn-quiz-id.html">Identification</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a>Rotating Coil in a Magnetic Field <span class="submenu-arrow">&#9656;</span></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="rotatingcoil-quiz-mc.html">Multiple Choice</a></li>
+                                <li><a href="rotatingcoil-quiz-id.html">Identification</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="topic-header">
+        <div class="topic-header-content">
+            <h1>Introduction to Electromagnetic Induction</h1>
+            <p>Explore the relationship between electricity and magnetism and learn about Faraday's discovery.</p>
+        </div>
+    </section>
+
+    <section class="topic-content">
+        <div class="container">
+            <h2>Objective for this Lesson:</h2>
+            <ul>
+                <li>Explain Faraday's Law of Induction and its key concepts.</li>
+                <li>Describe the relationship between a changing magnetic field and the induced electromotive force (EMF).</li>
+                <li>Apply Faraday’s Law to calculate the induced EMF in a circuit.</li>
+                <li>Interpret the effects of factors like magnetic field strength, coil turns, and time on the induced EMF.</li>
+                <li>Analyze real-world applications of Faraday's Law, such as electric generators and transformers.</li>
+            </ul>
+            
+            <h2>Electromagnetic Induction</h2>
+            <p>Electromagnetic induction uses the relationship between electricity and magnetism whereby an electric current flowing through a single wire will produce a magnetic field around it. It was discovered in 1831 by Michael Faraday, who demonstrated that a changing magnetic field could induce an electric current in a wire loop. If the wire is wound into a coil, the magnetic field is greatly intensified, producing a static magnetic field around itself forming the shape of a bar magnet giving a distinct North and South pole.</p>
+
+            <div class="photo-placeholder">
+                <figure>
+                    <center>
+                        <img src="Pictures/MichaelFaraday.jpg" alt="Michael Faraday" class="img-responsive" style="max-width: 60%; height: auto;">
+                        <figcaption>Michael Faraday</figcaption>
+                    </center>
+                </figure>
+            </div>
+
+            <div class="history-box">
+                <h3>A Brief History</h3>
+                <p>The understanding of the connection between electricity and magnetism began with Hans Christian Ørsted's discovery in 1820 that electric currents create magnetic fields. This sparked the question of whether magnetism could produce electricity.</p>
+                <p>In 1831, Michael Faraday, through meticulous experimentation, discovered electromagnetic induction. He showed that a changing magnetic field in the vicinity of a conductor (like a wire or coil) induces an electromotive force (EMF), which can drive an electric current in a closed circuit.</p>
+                <p>One of Faraday's key experiments involved moving a magnet in and out of a coil of wire, which caused a current to flow in the coil. He also observed induction when a current in one coil was changed, affecting a nearby coil.</p>
+                <p>Faraday's groundbreaking work provided the fundamental principles behind many electrical technologies we use today, including electric generators and transformers.</p>
+            </div>
+
+
+            <section class="applications">
+                <h2>Applications of Electromagnetic Induction</h2>
+                <p>Electromagnetic induction plays a crucial role in various technologies that we use daily. Some of the most common applications include:</p>
+                
+                <h3>1. Electric Generators</h3>
+                <center><img src="Pictures/ElectricGenerator.jpg" alt="Electric Generators" class="img-responsive" style="max-width: 30%; height: auto; "></center>
+                <p>Electric generators are perhaps the most significant application of electromagnetic induction. They work by moving a coil of wire through a magnetic field, which induces an electromotive force (EMF). This is the principle behind power plants, where mechanical energy is converted into electrical energy to power homes, factories, and industries.</p>
+
+
+                <h3>2. Transformers</h3>
+                <center><img src="Pictures/Transformers.jpg" alt="Transformers" class="img-responsive" style="max-width: 30%; height: auto; "></center>
+                <p>Transformers use electromagnetic induction to change the voltage of alternating current (AC) in power transmission systems. They work by passing a current through one coil (the primary coil), which creates a magnetic field that induces a current in a second coil (the secondary coil). This allows for efficient transmission of electricity over long distances.</p>
+
+                <h3>3. Induction Cooking</h3>
+                <center><img src="Pictures/InductionCooking.jpg" alt="Induction Cooking" class="img-responsive" style="max-width: 30%; height: auto; "></center>
+                <p>Induction cooking uses electromagnetic induction to heat pots and pans directly without heating the stove. A high-frequency magnetic field is generated by a coil under the cooking surface, which induces an electric current in the cooking vessel, heating it up. This method is faster and more energy-efficient than traditional electric or gas cooking.</p>
+
+                <h3>4. Wireless Charging</h3>
+                <center><img src="Pictures/WirelessCharging.jpg" alt="Wireless Charging" class="img-responsive" style="max-width: 30%; height: auto; "></center>
+                <p>Wireless charging technologies use the principle of electromagnetic induction to transfer energy between a charging pad and a device, such as a smartphone or an electric vehicle. A magnetic field is generated by the pad, which induces a current in the receiving coil in the device, charging its battery without the need for physical connectors.</p>
+
+                <h3>5. Magnetic Levitation (Maglev) Trains</h3>
+                <center><img src="Pictures/MagneticLevitation.png" alt="Magnetic Levitation (Maglev) Trains" class="img-responsive" style="max-width: 30%; height: auto; "></center>
+                <p>Maglev trains rely on the principle of electromagnetic induction for levitation and propulsion. Electromagnets on the train interact with a magnetic track to lift the train off the ground and propel it forward with minimal friction, allowing for extremely high speeds and smooth rides.</p>
+
+                <h3>6. Metal Detectors</h3>
+                <center><img src="Pictures/MetalDetectors.jpg" alt="Metal Detectors" class="img-responsive" style="max-width: 30%; height: auto; "></center>
+                <p>Metal detectors use electromagnetic induction to detect the presence of metals. A coil generates a magnetic field, and when it interacts with a metal object, it induces a current in the metal. This change is detected by the metal detector, signaling the presence of metal objects underground or in other materials.</p>
+            </section>
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Help</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Support Center</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Policies</h3>
+                <a href="#">Accessibility Statement</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Licensing</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Manage Cookies</a>
+            </div>
+        </div>
+        <p>&copy; 2025 Electromagnetic Induction</p>
+    </footer>
+
+    <script src="dropdown.js"></script>
+
+</body>
+</html>
